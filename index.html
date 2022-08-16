@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+    <style>
+
+        .nav-color
+        {
+            background-color:#7c0098;
+           
+        }
+
+
+        
+  @media only screen and (max-width: 700px) {
+
+        .project-links
+        {
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          text-align: center;
+        }
+   
+
+        .dp-area
+        {
+          flex-direction: column;
+          height: auto;
+        }
+
+        .dp-content
+        {
+          width: 100%;
+          margin-left: 0px;
+        }
+
+        .dp
+        {
+          width: 100%;
+          padding-top:140px ;
+          height: auto;
+          position: static;
+        }
+
+        .dp img
+        {
+            position: static;
+        }
+        
+      
+      .dp::before
+      {
+        display: none;
+      }
+      
+      footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      }
+
+        
+    </style>
+</head>
+  <body>
+    
+    <nav class="navbar navbar-dark  fixed-top  nav-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end nav-color  " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+             
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">MARKS</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">OBJECTIVE SECTION</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PROJECTS</a>
+                </li>
+              
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="dp-area">
+
+        <div class="dp-content">
+          <div class="dp-heading">KUSHAGRA SAHU</div>
+          <div class="dp-description">Hello, my name is KUSHAGRA SAHU. I am MCA student and WEB DEVELOPMENT is my passion.</div>
+          <div class="dp-list">
+             <ul>
+                <li>UI/UX</li>
+                <li>FRONT END WEB DEVELOPMENT</li>
+                <LI>BACKEND</LI>
+                <li>SQL</li>
+              </ul>
+          </div>
+
+
+        </div>
+          <div class="dp">
+
+              <img alt="dp" src="data:image/jpeg;base64,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"/>
+            </div>
+
+      </div>
+     
+
+      <div class="about-me">
+        
+          <div class="card">
+              <div class="card-title">
+                Xth
+
+              </div>
+
+              <div class="card-content">
+                  8.8 CGPA
+
+              </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-title">
+              XII
+            </div>
+
+            <div class="card-content">
+                78%
+            </div>
+      </div>
+
+
+        <div class="card">
+          <div class="card-title">
+              BACHELOR'S
+          </div>
+
+          <div class="card-content">
+            78.6% 
+          </div>
+       </div>
+    
+   </div>
+
+
+<!-- accordian -->
+
+<div class="accordian-container">
+  <div class="section1">
+    <div class="arrow"><i class="fa fa-angle-down" style="font-size:28px"></i></div>
+
+    <button class="accordion">CAREER OBJECTIVE</button>
+    <div class="panel">
+      <p>Secure good position in reputed organization to expand my learning,
+        knowledge and skills and use them to achieve goals of company focusing on customer satisfaction, 
+        relation and experience.
+      </p>
+    </div>
+  </div>
+
+
+
+   <div class="section1">
+    <div class="arrow"><i class="fa fa-angle-down" style="font-size:28px"></i></div>  
+      <button class="accordion">SKILLS</button>
+      <div class="panel">
+        <p>Technical Skills: Front-end WEB DEVELOPMENT, programming</p>
+        <p>Soft Skills: Adaptability, Creative thinking, Team work, Time-management, Problem-solving, Decision making, Work ethics, Openness to criticism.</p>
+      </div>
+    </div>
+
+
+
+   <div class="section1">
+    <div class="arrow"><i class="fa fa-angle-down" style="font-size:28px"></i></div>
+    <button class="accordion">LANGUAGES KNOWN</button>
+    <div class="panel">
+      <ol>
+        <li>C++</li>
+          <li>JAVA</li>
+          <li>PYTHON</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>PHP</li>
+
+        
+          </li>
+      </ol>
+      
+    </div>
+  
+</div>
+</div>
+
+
+<div class="training">
+  <div>
+   <h1>
+     
+     TECHNICAL TRAININGS/DIPLOMA 
+   </h1> 
+
+  </div>
+  <div class="training-content">
+    
+    •	Interactivity with JavaScript(Online Course BY University of MICHIGAN via coursera)
+    <br>
+    
+    •	Styling with CSS(Online Course BY University of MICHIGAN via coursera)
+
+  </div>
+
+
+</div>
+
+
+<div class="projects">
+
+    <div class="project-heading">
+      <h1>PROJECTS DONE</h1>
+    </div>
+
+    <div class="project-links">
+
+      <a href="https://catalogu-e.000webhostapp.com/">Catalogue</a>
+      <a href="https://practice276.000webhostapp.com/">FEEDBACK SYSTEM</a>
+      <a href="https://kushagrasahu7.github.io/MotivationalQuote/">MotivationQuote</a>
+      <a href="https://kushagrasahu7.github.io/WeatherApp/">WeatherAPP</a>
+
+      <a href="https://public.tableau.com/app/profile/kushagra.sahu6554/viz/sales1_16580831208070/Dashboard1?publish=yes">TABLEAU 1</a>
+      <a href="https://public.tableau.com/app/profile/kushagra.sahu6554/viz/Book1_16581681113980/Dashboard1?publish=yes">TABLEAU 2</a>
+
+
+      
+    </div>
+</div>
+      
+   
+
+  
+
+<footer>
+
+    <div class="p-details">
+      <p>
+
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        C-3 2007, Prateek GrandCity, Siddhart Vihar , Ghaziabad-201009
+      
+    </p>
+      
+      <p>
+        <i class="fa fa-phone" aria-hidden="true"></i> 9560156265
+      </p>
+
+      <p>
+        <i class="fa fa-envelope" aria-hidden="true"></i> kushagrasahu276@gmail.com
+      </p>
+
+      </div>
+
+      <div class="socialmedia">
+        <a href="https://github.com/KushagraSahu7"> <i class="fa fa-github" aria-hidden="true" style="font-size:40px; color: white;"></i></a>
+        <a href="https://github.com/KushagraSahu7"> <i class="fa fa-facebook" aria-hidden="true" style="font-size:40px; color: white;"></i></a>
+        <a href="https://github.com/KushagraSahu7"> <i class="fa fa-instagram" aria-hidden="true" style="font-size:40px; color: white;"></i></a>
+
+
+      </div>
+
+</footer>
+
+
+
+
+
+      
+
+  </body>
+
+  <script>
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+</html>

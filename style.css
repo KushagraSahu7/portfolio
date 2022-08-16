@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.dp-area
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('https://static.vecteezy.com/system/resources/previews/001/946/670/original/abstract-template-grey-geometric-shine-and-layer-background-with-light-blue-effect-technology-style-free-vector.jpg'); */
+    padding-top:70px ;
+    /* background-color: rgb(235, 239, 243); */
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.dp-area ul
+{
+    list-style: none;
+}
+.dp-content
+{
+    width: 60%;
+    position: relative;
+    margin-left: 40px;
+   
+}
+
+.dp-area::before
+{
+    position: absolute;
+    background-color: #D679EC;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    bottom: -70px;
+    left: -70px;
+    content: "";
+}
+
+.dp-area::after
+{
+    position: absolute;
+    background-color: #D679EC;
+    height: 550px;
+    width: 350px;
+    border-radius: 100%;
+    top: 100px;
+    right: -200px;
+    content: "";
+}
+
+.dp-heading
+{
+    padding-left: 32px;
+    font-size:40px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+
+.dp-description
+{
+    padding-left:32px;
+    padding-right:200px;
+    font-size:20px;
+    margin-bottom: 15px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.dp-description,li
+{
+    color: slategray;
+}
+.dp
+{
+    width: 40%;
+    
+    position: relative;
+    height: 100%;
+}
+
+.dp::before
+{   content: "";
+    width: 280px;
+    height: 280px;
+    background-color:#D679EC;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    z-index: 1;
+    border-radius: 100% ;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+dp-list li
+{
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.dp img
+{
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+
+.about-me
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.card
+{
+    margin: 25px;
+    max-width: 320px;
+    width:320px ;
+    min-width: 320px;
+    min-height: 300px;
+    transition: all 300ms;
+}
+
+.card:hover
+{
+    box-shadow: 2px 2px 14px rgb(189, 188, 188);
+}
+
+.card:hover .card-content
+{
+   border-bottom: 1px solid dodgerblue;
+   
+}
+
+.about-me .card:nth-child(odd)
+{
+    border-top: 3px solid tomato;
+}
+
+.about-me .card:nth-child(even)
+{
+    border-top: 3px solid dodgerblue;
+}
+
+.about-me .card-title
+{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.about-me .card-content
+{
+    text-align: center;
+    font-size: 50px;
+    margin:0px 50px ;
+    margin-top: 20%;
+}
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+   
+  }
+
+  .accordian-container
+  {
+    width: 90%;
+    margin:0px auto;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 10px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 20px;
+    
+  }
+
+  .section1
+  {
+    position: relative;
+
+  }
+
+  .arrow
+  {
+    position: absolute;
+    right:10px;
+    top:15px;
+
+  }
+
+  .projects
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:10px;
+  }
+
+  .project-heading h1
+  {
+    text-align: center;
+    color:rgb(91, 103, 116);
+    padding: 20px;
+
+  }
+
+ .project-links
+  {
+    display: flex;
+    
+    
+   
+  }
+
+  .project-links a
+  {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #D679EC;
+    color: white;
+    transition: all 200ms;
+    margin: 3px;
+  }
+
+  .project-links a:hover
+  {
+    color:#D679EC;
+    background-color: white;
+    border: 1px solid #D679EC;
+   
+    
+  }
+
+  .training
+  {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;
+  }
+
+  .training h1
+  {
+    margin:20px 0px;
+  }
+
+  .training-content
+  {
+    font-size: 20px;
+  }
+
+
+
+  footer
+  {
+    background-color:#9b05bd;
+    display: flex;
+    color: white;
+    justify-content:space-evenly;
+    
+  }
+
+  .socialmedia a i
+  {
+        margin: 20px 25px;
+  }
