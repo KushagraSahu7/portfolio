@@ -48,6 +48,7 @@
     top: 100px;
     right: -200px;
     content: "";
+    z-index:-1 ;
 }
 
 .dp-heading
